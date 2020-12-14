@@ -13,6 +13,7 @@ class BasicServer
 
   public function reply($data)
   {
+    header('Content-type: application/json; charset=utf-8');
     echo $data;
     exit;
   }
